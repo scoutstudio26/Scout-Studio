@@ -163,15 +163,15 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-top: 80px;
     overflow: hidden;
   }
 
   .hero-left {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 56px;
+    padding-top: 100px;
     gap: 24px;
   }
 
@@ -218,7 +218,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    gap: 2px;
+    gap: 0;
     overflow: hidden;
   }
 
@@ -266,8 +266,9 @@
   .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-    margin-bottom: 2px;
+    gap: 0;
+    margin-bottom: 0;
+    align-items: stretch;
   }
 
   .about-img-tall {
@@ -397,7 +398,8 @@
   .lifestyle-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    gap: 0;
+    align-items: stretch;
   }
 
   .ls-img {
@@ -413,36 +415,51 @@
 
   .ls-2 {
     background-image: url("https://i.pinimg.com/736x/28/f9/9a/28f99ad9f9a6468ec348556aca228f00.jpg");
-    background-size: cover;
-    background-position: center 25%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0ebe2;
   }
 
   .ls-3 {
     background-image: url("https://i.pinimg.com/1200x/bd/ca/ce/bdcace2fd83d0341a145bef552180ee3.jpg");
-    background-size: cover;
-    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #f0ebe2;
   }
 
   /* SERVICES */
   .services-imgs {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
+    gap: 0;
     margin-bottom: 64px;
+    align-items: start;
   }
 
-  .svc-img { height: 420px; background-size: cover; background-position: center; }
+  .svc-img {
+    height: 520px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-color: var(--cream);
+  }
 
   .svc-img-1 {
     background-image: url("https://i.pinimg.com/1200x/5f/87/52/5f8752a6fbf227f73e5d8f4d5614c07e.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
+    background-color: var(--cream);
   }
 
   .svc-img-2 {
     background-image: url("https://i.pinimg.com/1200x/cd/ad/fd/cdadfdf186c6d08fa0610ad0691f1edc.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
+    background-color: var(--cream);
   }
 
   .service-row {
@@ -472,8 +489,10 @@
 
   .svc-img-3 {
     background-image: url("https://i.pinimg.com/736x/ce/f6/8a/cef68ab6c1066d6f34b05072151b4485.jpg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center center;
+    background-color: var(--cream);
   }
 
   /* CONTACT */
@@ -657,8 +676,8 @@
   </div>
   <div class="about-grid">
     <div class="about-img-tall"></div>
-    <div class="about-img-sm about-img-2"></div>
-    <div class="about-img-sm about-img-3"></div>
+    <div class="about-img-tall about-img-2"></div>
+    <div class="about-img-tall about-img-3"></div>
   </div>
   <div class="about-text">
     <p class="about-statement">Menswear. Interiors. Objects. Curated with one question in mind.</p>
